@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idCardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfileOther"
+            android:contentDescription="@string/profile_other"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:civ_border_color="@color/pressed_color"
+            app:civ_border_width="3dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/size4dp"
+            android:layout_marginEnd="@dimen/size4dp"
+            android:layout_marginTop="@dimen/size4dp"
+            android:layout_alignParentStart="true"/>
+    <TextView
+        android:textSize="16sp"
+        android:id="@+id/tvBodyMe"
+        android:padding="@dimen/size8"
+        android:ellipsize="end"
+        android:text="Processing ..."
+        android:layout_margin="8dp"
+        style="@style/mave_normal"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="@dimen/size8"
+        android:layout_width="wrap_content"
+        android:background="@drawable/my_message"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivProfileMe"
+        android:layout_toRightOf="@+id/ivProfileOther"
+
+
+
+        />
+
+   <!-- <TextView
+        android:textSize="18sp"
+        android:id="@+id/tvBodyOther"
+        android:padding="@dimen/size4dp"
+        android:ellipsize="end"
+        android:text="Processing ..."
+        android:textColor="@android:color/black"
+        android:layout_marginEnd="@dimen/size8"
+        android:layout_width="wrap_content"
+        android:background="@drawable/my_message1"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivProfileMe"
+        android:layout_toRightOf="@+id/ivProfileOther"
+        android:layout_marginTop="8dp"
+        />-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfileMe"
+            android:contentDescription="@string/profile_me"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:civ_border_color="@color/pressed_color"
+            app:civ_border_width="3dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/size4dp"
+            android:layout_marginEnd="@dimen/size4dp"
+            android:layout_marginBottom="@dimen/size4dp"
+            />
+
+</RelativeLayout>

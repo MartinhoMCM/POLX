@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?><!-- row_card_edit_postedit_post.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgCapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@color/pressed_color"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_prod"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frame"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_expand_more"
+                android:visibility="invisible" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/info"
+                android:layout_below="@id/frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="-16dp"
+                android:src="@drawable/placeholder"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iu"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="@dimen/size16dp"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+
+                <TextView
+                    android:id="@+id/title_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/maven_pro_medium"
+                    android:paddingBottom="3dp"
+                    android:text="Sansung galaxy s8"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/categoria_id"
+                    style="@style/mave_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Computador"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="11sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/size4dp"
+                        android:elegantTextHeight="true"
+                        android:fontFamily="@font/maven_pro"
+                        android:freezesText="true"
+                        android:text="Share InstaPics in your favorites social networks, or Invite your friends and get more followers!"
+                        android:textAlignment="textStart"
+                        android:textSize="11sp"
+                        android:visibility="visible"
+                        tools:ignore="RtlCompat"
+                        tools:targetApi="lollipop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/ablitar_preco"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/preco_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/buttonprice_shape"
+                            android:padding="4dp"
+                            android:fontFamily="@font/maven_pro_medium"
+                            android:text="10.00.00.000"
+                            android:textColor="@color/colorProgressRating1"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/buttonprice_shape"
+                        android:padding="4dp"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:text="( KZ )"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/ablitar_localizacao"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/grey"/>
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/location_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        style="@style/mave_normal"
+                        android:text="GPS is not enabled. you have enable it to get your current location"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/data_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="start"
+                        style="@style/mave_normal"
+                        android:text="11/02/3028"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pressed_color"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageButton
+                android:id="@+id/expandir_bottom_id"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_expand_more"
+                android:tint="@color/textColor" />
+
+            <ImageButton
+                android:visibility="gone"
+                android:id="@+id/expandir_top_id"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_expandir_cima"
+                android:tint="@color/textColor" />
+
+            <ImageButton
+                android:id="@+id/id_favorito_like"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_favority_outline"
+                android:background="@android:color/transparent"
+                android:tint="@color/textColor" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

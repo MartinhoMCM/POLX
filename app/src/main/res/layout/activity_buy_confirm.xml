@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".buy.BuyConfirmActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearSnack"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleTextColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    app:title="Confirma o pagamento"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:navigationIcon="?attr/homeAsUpIndicator">
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        style="@style/mave_bold"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cristovao jobs"
+                        android:textAllCaps="true"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimaryText"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorSecondaryText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fab_margin"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:id="@+id/userPic"
+                                android:layout_height="30dp"
+                                android:tint="@color/colorPrimaryText"
+                                android:src="@drawable/ic_kumbu_preto"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/colorGrass"
+                                android:src="@drawable/ic_compare"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:src="@drawable/logo_large"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:gravity="start"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/colorGrass"
+                                android:src="@drawable/ic_compare"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/tres"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+
+                        style="@style/mave_normal"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:text="Faça o deposito do valor do produto no numero da conta abaixo"
+                        android:layout_marginTop="26dp"
+                        tools:targetApi="jelly_bean" />
+
+                    <View
+                        android:layout_width="300dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorSecondaryText" />
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:text="NOME DO PRODUTO :"
+                                android:textAllCaps="true"
+                                android:textSize="12sp"
+                                tools:targetApi="jelly_bean" />
+
+                            <TextView
+                                android:id="@+id/mProductName"
+                                style="@style/mave_bold"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="GOOD OF WAR"
+                                android:textAllCaps="true"
+                                android:layout_marginTop="@dimen/size4dp"
+                                android:textColor="@android:color/holo_orange_light"
+                                android:textSize="16sp"
+                                tools:targetApi="jelly_bean" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorSecondaryText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="VALOR EM KZ DO PRODUTO :"
+                            android:textAllCaps="true"
+                            android:textSize="12sp"
+                            android:layout_marginTop="@dimen/fab_margin"
+                            tools:targetApi="jelly_bean" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/mProductPrice"
+                                style="@style/mave_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="400.00.00.00"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/holo_orange_light"
+                                android:textSize="16sp"
+                                tools:targetApi="jelly_bean" />
+
+                            <TextView
+                                android:textColor="@color/colorPrimaryText"
+                                style="@style/mave_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:text="KZ"
+                                android:textAllCaps="true"
+                                android:layout_marginStart="8dp"
+                                android:textSize="16sp"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorSecondaryText" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NUMERO DA CONTA BAI A DEPOSITO :"
+                            android:textAllCaps="true"
+                            android:textSize="12sp"
+                            android:layout_marginTop="@dimen/fab_margin"
+                            tools:targetApi="jelly_bean" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/mave_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="123456789056445"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/holo_orange_light"
+                                android:textSize="16sp"
+                                tools:targetApi="jelly_bean" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/preco_normal"
+                                android:tint="@android:color/holo_green_light"
+                                android:layout_marginStart="4dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorSecondaryText" />
+
+
+                <TextView
+                    style="@style/mave_normal"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    android:text="Ja depositou o valor do produto acima clica no botao abaixo para verficar o bolderom comprovativo"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    tools:targetApi="jelly_bean" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/size16dp"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:id="@+id/sim_confirmo"
+                        android:layout_width="210dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/connect_button"
+                        android:textAllCaps="true"
+                        android:text="Validar o comprovativo"/>
+
+                    <Button
+                        android:id="@+id/nao_confirmo"
+                        android:layout_width="210dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/message_button"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="8dp"
+                        android:text="CANCELAR O PROCESSO"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:elevation="@dimen/fab_margin"
+                    android:id="@+id/slider"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:tint="@color/branco"
+                    android:background="@drawable/bg_circle_solid"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_lightbulb"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

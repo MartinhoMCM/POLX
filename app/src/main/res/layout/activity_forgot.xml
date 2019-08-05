@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_login"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/linearLayout2">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo_large" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/mave_bold"
+            android:layout_marginBottom="25dp"
+            android:text="Recover your password"
+            android:textStyle="normal|bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputResent">
+
+            <EditText
+                android:id="@+id/editResent"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                style="@style/mave_normal"
+                android:hint="Email or username"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_Resent"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/link_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        style="@style/mave_normal"
+        android:text="Remember Password? Login."
+        android:textSize="14sp" />
+
+</LinearLayout>

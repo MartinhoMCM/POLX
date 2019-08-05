@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/mLiniarSnack">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size4dp"
+                android:text="Protegemos sua conta sempre"
+                android:textSize="24sp"
+                android:fontFamily="@font/maven_pro_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size4dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Utiliza seu email ou nome de usuario"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EditInputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nome_de_usuario"
+                    android:fontFamily="@font/maven_pro"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EditInputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/pressed_color">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/senha"
+                    android:fontFamily="@font/maven_pro"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:importantForAutofill="no"
+                    tools:targetApi="o" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:fontFamily="@font/maven_pro"
+                android:text="@string/ficar_ligado"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/ForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/transparent"
+                android:text="@string/forgot_password"
+                android:fontFamily="@font/maven_pro"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/size16dp"
+            android:textAllCaps="true"
+            style="@style/mave_bold"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/entrar"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/empty_state"/>
+
+        <TextView
+            style="@style/mave_bold"
+            android:layout_marginTop="@dimen/size16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/erroTitle"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="OOH NO ANNUNCIE"/>
+
+        <TextView
+            style="@style/mave_normal"
+            android:layout_margin="@dimen/size4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:id="@+id/erroDescricao"
+            android:text="Vamos notifica lo quando tivermos no ar "/>
+
+        <TextView
+            android:layout_margin="@dimen/size4dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/erroAction"
+            style="@style/mave_bold"
+            android:text="Create new post"/>
+
+    </LinearLayout>
+
+</LinearLayout>

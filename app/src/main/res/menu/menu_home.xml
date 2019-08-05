@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addPost"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_add"
+        android:title="refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/sair_app"
+        android:orderInCategory="100"
+        android:title="Deslogar"
+        app:showAsAction="never" />
+</menu>

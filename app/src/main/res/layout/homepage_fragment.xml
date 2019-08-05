@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".home.HomeActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/linearicon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:titleEnabled="false"
+                    app:toolbarId="@+id/toolbar">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_collapseMode="parallax">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="14dp"
+                                            android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="0dp"
+                                                    android:layout_weight="1">
+
+
+                                                        <LinearLayout
+                                                            android:animateLayoutChanges="true"
+                                                            android:layout_width="31dp"
+                                                            android:layout_height="31dp"
+                                                            android:background="@drawable/circlecolorpink" >
+
+                                                                <ProgressBar
+                                                                    android:visibility="gone"
+                                                                    android:id="@+id/progress_categoria_id"
+                                                                    android:layout_width="31dp"
+                                                                    android:layout_height="31dp"
+                                                                    android:padding="@dimen/size4dp"
+                                                                    android:indeterminate="true" />
+
+                                                        </LinearLayout>
+                                                        <ImageView
+                                                            android:id="@+id/anuncioSlider"
+                                                            android:layout_width="31dp"
+                                                            android:layout_height="31dp"
+                                                            android:padding="@dimen/size4dp"
+                                                            android:background="@drawable/circlecolorpink"
+                                                            android:layout_marginStart="6dp"
+                                                            android:src="@drawable/ic_store_white"
+                                                            android:tint="@color/textColor"
+                                                            android:contentDescription="@string/app_name" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginStart="@dimen/fab_margin"
+                                                            android:layout_marginTop="3dp"
+                                                            style="@style/mave_bold"
+                                                            android:gravity="end"
+                                                            android:text="Anúncios /"
+                                                            android:textColor="@color/com_facebook_device_auth_text"
+                                                            android:textSize="18sp" />
+
+                                                           <include layout="@layout/count"/>
+
+                                                </LinearLayout>
+
+                                                <ImageView
+                                                    android:id="@+id/stock_imageclickable"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:src="@drawable/ic_atualizacao"
+                                                    android:visibility="gone" />
+
+                                        </LinearLayout>
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="2dp"
+                                            android:contentDescription="@string/app_name"
+                                            android:layerType="software"
+                                            android:src="@drawable/dash" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                                <HorizontalScrollView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:scrollbars="none"
+                                                    tools:ignore="UselessParent">
+
+                                                        <com.google.android.material.chip.ChipGroup
+                                                            style="@style/Platform.MaterialComponents"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            app:singleLine="true"
+                                                            app:singleSelection="true">
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idClothes"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:fontFamily="@font/maven_pro"
+                                                                    android:text="Roupas"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:chipBackgroundColor="@color/colorAccent"
+                                                                    app:chipIconTint="@color/white"
+                                                                    app:chipIcon="@drawable/ic_shirt"
+                                                                    app:iconStartPadding="5dp" />
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idGames"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:fontFamily="@font/maven_pro_medium"
+                                                                    android:text="Jogos"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/black"
+                                                                    app:chipBackgroundColor="@color/white"
+                                                                    app:chipIcon="@drawable/ic_games"
+                                                                    app:chipIconTint="@color/colorGrassDark"
+                                                                    app:chipStrokeColor="@color/colorGrassDark"
+                                                                    app:chipStrokeWidth="1dp"
+                                                                    app:iconStartPadding="5dp" />
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idJobs"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:text="Emprego"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:chipBackgroundColor="@color/bg_screen1"
+                                                                    app:chipIcon="@drawable/ic_business"
+                                                                    app:chipIconTint="@color/white"
+                                                                    app:iconStartPadding="5dp" />
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idCosmetic"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:text="Cosmésticos"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:iconStartPadding="5dp"
+                                                                    app:chipBackgroundColor="@color/colorLavanderDark"
+                                                                    app:chipIcon="@drawable/ic_brush"
+                                                                    app:chipIconTint="@color/white" />
+                                                        </com.google.android.material.chip.ChipGroup>
+                                                </HorizontalScrollView>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                                <HorizontalScrollView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:scrollbars="none"
+                                                    tools:ignore="UselessParent">
+
+                                                        <com.google.android.material.chip.ChipGroup
+                                                            style="@style/Platform.MaterialComponents"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            app:singleLine="true"
+                                                            app:singleSelection="true">
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idHome"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:text="Casa, Imóveis"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:chipBackgroundColor="@color/colorBlueJeans"
+                                                                    app:chipIcon="@drawable/ic_home"
+                                                                    app:iconStartPadding="5dp"
+                                                                    app:chipIconTint="@color/white" />
+
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idTech"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:text="Tecnologia"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:chipBackgroundColor="@color/colorBitterSweet"
+                                                                    app:chipIcon="@drawable/ic_devices_black_24dp"
+                                                                    app:chipIconTint="@color/white"
+                                                                    app:iconStartPadding="5dp" />
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idCar"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:text="Automóvel"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:chipBackgroundColor="@color/colorPrimaryDark"
+                                                                    app:chipIconTint="@color/white"
+                                                                    app:chipIcon="@drawable/ic_ios_car"
+                                                                    app:iconStartPadding="5dp" />
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idServices"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:text="Serviços"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:chipBackgroundColor="@color/colorFlower"
+                                                                    app:chipIcon="@drawable/ic_build_black_24dp"
+                                                                    app:chipIconTint="@color/white"
+                                                                    app:iconStartPadding="5dp" />
+
+                                                                <com.google.android.material.chip.Chip
+                                                                    android:id="@+id/idOthersSells"
+                                                                    style="@style/Widget.MaterialComponents.Chip.Action"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_marginStart="8dp"
+                                                                    android:text="Outras vendas"
+                                                                    android:textAlignment="center"
+                                                                    android:textColor="@color/white"
+                                                                    app:chipBackgroundColor="@color/colorAquaDark"
+                                                                    app:chipIcon="@drawable/ic_casino"
+                                                                    app:iconStartPadding="5dp"
+                                                                    app:chipIconTint="@color/white" />
+                                                        </com.google.android.material.chip.ChipGroup>
+                                                </HorizontalScrollView>
+
+                                                <View
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="60dp" />
+                                        </LinearLayout>
+                                </LinearLayout>
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:layout_collapseMode="pin"
+                            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/content_frame_home" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

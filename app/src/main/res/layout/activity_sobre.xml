@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".proload.SobreActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            tools:ignore="ContentDescription"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_large"
+            android:id="@+id/imageView2"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/branco"
+            android:layout_marginBottom="36dp"
+            android:text="Versão 0.1"
+            android:textSize="15sp"
+            style="@style/mave_normal"
+            android:layout_above="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:textColor="@color/branco"
+            android:textSize="38sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/Base.Theme.AppCompat.Dialog.FixedSize"
+            android:text="POLX"
+            style="@style/mave_bold"
+            android:layout_above="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:textColor="@color/branco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            style="@style/mave_normal"
+            android:text="©2018-2019 Desenvolvido por Angopapo"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/branco"
+            android:layout_marginTop="12dp"
+            style="@style/mave_normal"
+            android:text="Todos direitos Reservado."
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/webSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="www.angopapo.com"
+            android:textAllCaps="false"
+            style="@style/mave_bold"
+            android:textColor="@color/branco"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

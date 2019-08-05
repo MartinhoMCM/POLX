@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:id="@+id/card_click"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pesquisa_user_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="0dp"
+            app:civ_border_color="@color/white"
+            android:layout_gravity="center"
+            android:src="@drawable/placeholder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pesquisa_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/mave_bold"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:text="Titulo produto"/>
+
+            <TextView
+                android:id="@+id/pesquisa_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                style="@style/mave_normal"
+                android:text="categoria do produto"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pesquisa_img_capa"
+            android:layout_gravity="right"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/house" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".home.HomeActivity"
+    tools:showIn="@layout/activity_search">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="visible"
+            android:id="@+id/listaUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true"
+            android:layout_marginBottom="56dp"
+            tools:listitem="@layout/row_card_pesquisa"/>
+
+        <LinearLayout
+            android:id="@+id/noInternet"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/empty_state"/>
+
+            <TextView
+                style="@style/mave_bold"
+                android:layout_marginTop="@dimen/size16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="No internet"/>
+
+            <TextView
+                style="@style/mave_normal"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:text="Can\'t connect. Verify your Data Plan or Wifi"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                style="@style/mave_bold"
+                android:text="Go for configuration"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noResults"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/no_results"/>
+
+            <TextView
+                style="@style/mave_bold"
+                android:layout_marginTop="@dimen/size16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="No results"/>
+
+            <TextView
+                style="@style/mave_normal"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:text="Sorry to not find what you are looking"/>
+
+            <TextView
+                android:id="@+id/id_text_field"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                style="@style/mave_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

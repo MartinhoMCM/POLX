@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7b1fa2</color>
+    <color name="colorPrimaryDark">#6a1b9a</color>
+    <color name="colorAccent">#49BEFF</color>
+
+    <color name="alternativa_slide1">#8F27B0</color>
+    <color name="alternativa_slide2">#FF9800</color>
+    <color name="alternativa_slide3">#C6ACCE</color>
+    <color name="alternativa_home_1">#FA8326</color>
+    <color name="toolbar">#9035AC</color>
+
+
+    <color name="fab1_color">#4CAF50</color>
+
+    <color name="fab2_color">#2196F3</color>
+
+    <color name="facebookBlue">#3F5996</color>
+    <color name="twitterBlue">#29C5F6</color>
+    <color name="googleRed">#D03E2F</color>
+    <color name="red">#ffcc0000</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="editTextBG">#DADADA</color>
+
+    <color name="textColor">#6e6e6e</color>
+
+    <color name="semi_black_transparent">#B2000000</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="separete_line">#E7E3E3</color>
+    <color name="white_al">#B0B0B0</color>
+
+
+    <color name="colorGrey">#616161</color>
+    <color name="colorLightGrey">#757575</color>
+    <color name="colorVeryLightGrey">#E0E0E0</color>
+    <color name="colorGreyTransparent">#50000000</color>
+
+    <color name="colorPageGrey">#EEEEEE</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorRatingBackground">#f2f2f2</color>
+
+    <color name="releasebase">#212121</color>
+    <color name="pressbase">#FAFAFA</color>
+    <color name="bellbase">#9E9E9E</color>
+
+    <color name="colorProgressRating1">#57bb8a</color>
+    <color name="colorProgressRating2">#9ace6a</color>
+    <color name="colorProgressRating3">#ffeb3b</color>
+    <color name="colorProgressRating4">#ffbb50</color>
+    <color name="colorProgressRating5">#ff8a65</color>
+
+    <color name="colorPDark">#600d30</color>
+    <color name="colorToolbarDark">#3748b3</color>
+    <color name="colorUnread">#5bc7d8</color>
+    <color name="black">#010101</color>
+
+    <color name="la">#3F51B5</color>
+    <color name="be">#303F9F</color>
+    <color name="cc">#FF4081</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#9E9E9E</color>
+    <color name="colorMoreGreen">#0c8130</color>
+    <color name="less_primary">#4CAF50</color>
+
+    <color name="background">#FCFCFC</color>
+    <color name="lightgray">#EDEDED</color>
+    <color name="deeppurple">#f57921</color>
+    <color name="materialyello">#ffb300</color>
+    <color name="materialgreen">#00bfa5</color>
+    <color name="pinkaccent">#FF4081</color>
+
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="grey">#E5E5E5</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrapeFruit">#ED5565</color>
+    <color name="colorGrapeFruitDark">#DA4453</color>
+    <color name="colorBitterSweet">#FC6E51</color>
+    <color name="colorBitterSweetDark">#E9573F</color>
+    <color name="colorFlower">#d0cf773a</color>
+    <color name="colorFlowerDark">#F68B42</color>
+    <color name="colorGrass">#a0d468</color>
+    <color name="colorGrassDark">#8cc152</color>
+    <color name="colorBlueJeans">#509CEC</color>
+    <color name="colorBlueJeansDark">#4A89DC</color>
+    <color name="colorLavander">#AC92EC</color>
+    <color name="colorLavanderDark">#967ADC</color>
+    <color name="colorMint">#48CFAD</color>
+    <color name="colorMintDark">#37BC9B</color>
+    <color name="colorAqua">#4FC1E9</color>
+    <color name="colorAquaDark">#3BAFDA</color>
+    <color name="colorPinkRose">#EC87C0</color>
+    <color name="colorPinkRoseDark">#D770AD</color>++
+    <color name="pressed_color">#E7E7E7</color>
+
+    <color name="materialazur">#F1F5F8</color>
+    <color name="branco">#FFF</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

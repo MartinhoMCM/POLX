@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".home.SearchAllActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBarLayout"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="enterAlwaysCollapsed"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <SearchView
+                    android:id="@+id/psqGeral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </SearchView>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/linearicon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:titleEnabled="false"
+                app:toolbarId="@+id/toolbar">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    app:layout_collapseMode="parallax">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:animateLayoutChanges="true"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="14dp"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:animateLayoutChanges="true"
+                                android:layout_weight="1">
+
+
+                                <LinearLayout
+                                    android:animateLayoutChanges="true"
+                                    android:layout_width="31dp"
+                                    android:layout_height="31dp"
+                                    android:background="@drawable/circlecolorpink" >
+
+                                    <ProgressBar
+                                        android:visibility="gone"
+                                        android:id="@+id/progress_bar_id"
+                                        android:layout_width="31dp"
+                                        android:layout_height="31dp"
+                                        android:padding="@dimen/size4dp"
+                                        android:indeterminate="true" />
+
+                                </LinearLayout>
+                                <ImageView
+                                    android:id="@+id/anuncioSlider"
+                                    android:layout_width="31dp"
+                                    android:layout_height="31dp"
+                                    android:padding="@dimen/size4dp"
+                                    android:background="@drawable/circlecolorpink"
+                                    android:layout_marginStart="6dp"
+                                    android:src="@drawable/ic_short_text"
+                                    android:tint="@color/textColor"
+                                    android:contentDescription="@string/app_name" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/fab_margin"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/maven_pro_medium"
+                                    android:gravity="end"
+                                    android:text="Resultados /"
+                                    android:textColor="@color/com_facebook_device_auth_text"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/pesquisaCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/fab_margin"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/maven_pro_medium"
+                                    android:gravity="end"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="18sp"
+                                    />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/stock_imageclickable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_atualizacao"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:contentDescription="@string/app_name"
+                            android:layerType="software"
+                            android:src="@drawable/dash" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+
+           <SearchView
+               android:id="@+id/pesquisar_tudo"
+               android:layout_width="match_parent"
+               android:background="@color/materialazur"
+               android:queryHint="Pesquisar no Olx"
+               android:layout_height="wrap_content">
+
+           </SearchView>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:stackFromBottom="true"
+            android:visibility="visible"
+            tools:listitem="@layout/row_card_pesquisa" />
+
+        <LinearLayout
+            android:id="@+id/noInternet"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/empty_state"/>
+
+            <TextView
+                style="@style/mave_bold"
+                android:layout_marginTop="@dimen/size16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="No internet"/>
+
+            <TextView
+                style="@style/mave_normal"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:text="Can\'t connect. Verify your Data Plan or Wifi"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                style="@style/mave_bold"
+                android:text="Go for configuration"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noResults"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/no_results"/>
+
+            <TextView
+                style="@style/mave_bold"
+                android:layout_marginTop="@dimen/size16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="No results"/>
+
+            <TextView
+                style="@style/mave_normal"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:text="Sorry to not find what you are looking"/>
+
+            <TextView
+                android:id="@+id/id_text_field"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                style="@style/mave_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

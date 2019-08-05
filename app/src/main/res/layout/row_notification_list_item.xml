@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom|center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notifi_userProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="7dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/pressed_color"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_toRightOf="@+id/textView11"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            tools:ignore="UnknownId" />
+
+
+        <TextView
+            android:id="@+id/notifi_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            style="@style/mave_normal"
+            android:layout_toLeftOf="@+id/notifi_postPhoto"
+            android:layout_toRightOf="@+id/notifi_userProfile"
+            android:text="Mingui adicionou sua venda em seu favoritos"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/notifi_message_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifi_username"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="12:44"
+            android:textColor="@color/editTextBG"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/notifi_userProfile"
+            android:layout_toEndOf="@+id/notifi_userProfile" />
+
+
+        <ImageView
+            android:id="@+id/notifi_postPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/house"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/list"
+        android:background="#ACACAC"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="60dp" />
+
+
+</RelativeLayout>

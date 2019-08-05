@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notifications"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:layout_gravity="end"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:animateLayoutChanges="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_receipt" />
+
+    <FrameLayout
+        android:id="@+id/view_alert_red_circle"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="top|end"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/circlecolor">
+
+        <TextView
+            android:id="@+id/numeroPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/branco"
+            android:textSize="10sp"
+            tools:text="3" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".perfil_stock.fragments.DetailsFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          tools:ignore="UselessParent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:orientation="vertical"
+              android:background="@drawable/gradient">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:scaleType="centerCrop"
+                  android:layout_gravity="center_horizontal"
+                  android:src="@drawable/teste"
+                  android:contentDescription="@string/app_name" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="end">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                  android:text="2/37"
+                  android:elevation="8dp"
+                  android:background="@drawable/badge"
+                  android:padding="4dp"
+                  android:textColor="@android:color/white"
+                  android:layout_margin="5dp"
+                  android:textSize="14sp"/>
+
+          </LinearLayout>
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/cardView"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              app:cardElevation="2dp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="170dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_margin="8dp"
+                  android:baselineAligned="true">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="OVERALL DETAILS"
+                          android:textSize="15sp"
+                          android:textColor="@android:color/holo_red_light"
+                          android:textStyle="bold"
+                          android:layout_margin="8dp"/>
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:orientation="horizontal"
+                      android:layout_margin="8dp"
+                      android:weightSum="2"
+                      android:baselineAligned="true">
+
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:orientation="vertical">
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Price"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="300.000.00 SD"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Other Currrencies"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="10007.0006"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Other Currrencies"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="80.725.55"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Other Currrencies"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="7457.7895.9864"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:layout_marginStart="16dp"
+                          android:orientation="vertical">
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Currency"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="IDR"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Currency"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="USD ($)"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Currency"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp" />
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="USD ($)"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:paddingTop="5dp"
+                                  android:text="Currency"
+                                  style="@style/TextAppearance.MaterialComponents.Headline1"
+                                  android:textSize="12sp"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="USD ($)"
+                                  style="@style/TextAppearance.MaterialComponents.Headline5"
+                                  android:textSize="15sp"/>
+
+                              <View
+                                  android:layout_marginTop="3dp"
+                                  android:layout_width="wrap_content"
+                                  android:background="#ddd"
+                                  android:layout_height="1dp"/>
+                          </LinearLayout>
+
+                      </LinearLayout>
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+          <View
+              android:layout_width="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_below="@id/cardView"
+              android:background="#fafafa"
+              android:layout_height="20dp"
+              android:src="@drawable/ic_house_24dp"/>
+      </RelativeLayout>
+
+  </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

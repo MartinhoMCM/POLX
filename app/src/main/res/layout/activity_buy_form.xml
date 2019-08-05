@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".buy.BuyFormActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Pagamento passo 1"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="20dp"
+           android:orientation="vertical">
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="1dp"
+               android:layout_height="1dp"
+               android:layout_marginTop="-1dp" />
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:orientation="vertical"
+               android:layout_marginRight="30dp">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/size4dp"
+                   android:text="Inserir suas informações"
+                   android:textSize="20sp"
+                   android:fontFamily="@font/maven_pro_medium"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/size4dp"
+                   android:layout_marginTop="6dp"
+                   android:fontFamily="@font/maven_pro"
+                   android:text="As sua informações de indereço serão utilizado de cordo com processo corrente"
+                   android:textSize="15sp" />
+
+               <com.github.ybq.android.spinkit.SpinKitView
+                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                   android:id="@+id/spin_kit"
+                   style="@style/SpinKitView.Large.Circle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:visibility="invisible"
+                   android:layout_centerInParent="true"
+                   app:SpinKit_Color="@color/colorAccent" />
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/register_layout_input_user_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="0dp">
+
+                   <EditText
+                       android:id="@+id/buy_firstname"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:autofillHints="Cristovão Jobs"
+                       android:hint="Primeiro nome"
+                       android:editable="false"
+                       android:fontFamily="@font/maven_pro"
+                       android:inputType="textAutoComplete"
+                       android:maxLines="1"
+                       android:singleLine="true"
+                       tools:targetApi="o" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="30dp">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/register_layout_input_first_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp">
+
+                   <EditText
+                       android:id="@+id/buy_segundo_nome"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:autofillHints=""
+                       android:hint="Último nome"
+                       android:editable="false"
+                       android:fontFamily="@font/maven_pro"
+                       android:inputType="textAutoComplete"
+                       android:maxLines="1"
+                       android:singleLine="true"
+                       tools:targetApi="o" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/relative"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/imageView1"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="30dp">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/register_layout_input_first_number"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp">
+
+                   <Spinner
+                       android:hint="Categoria"
+                       android:id="@+id/buy_provincias_list"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:maxLines="1"
+                       android:singleLine="true"/>
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/relativeLayout2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginRight="30dp"
+               android:orientation="vertical">
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/register_layout_input_password"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:passwordToggleEnabled="true"
+                   app:passwordToggleTint="@color/pressed_color">
+
+                   <EditText
+                       android:id="@+id/buy_municipio_bairros"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Municipio/Bairros"
+                       android:imeActionId="6"
+                       android:fontFamily="@font/maven_pro"
+                       android:imeActionLabel="@string/action_sign_in_short"
+                       android:imeOptions="actionUnspecified"
+                       android:inputType="textAutoComplete"
+                       android:maxLines="1"
+                       android:singleLine="true" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="30dp">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/register_layout_input_last_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp">
+
+                   <EditText
+                       android:id="@+id/buy_endereco1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:autofillHints="Cristovão Jobs"
+                       android:hint="Endereço 1"
+                       android:fontFamily="@font/maven_pro"
+                       android:inputType="textAutoComplete"
+                       android:maxLines="1"
+                       android:singleLine="true"
+                       tools:targetApi="o" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/relativeLayout1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/imageView1"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="30dp">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/register_layout_input_email"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp">
+
+                   <AutoCompleteTextView
+                       android:id="@+id/buy_endereco2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:autofillHints="email@olx.com"
+                       android:hint="Endereço 2 (Opcional)"
+                       android:fontFamily="@font/maven_pro"
+                       android:inputType="textEmailAddress"
+                       android:maxLines="1"
+                       android:singleLine="true"
+                       tools:targetApi="o" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginRight="30dp">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:passwordToggleEnabled="true"
+                   app:passwordToggleTint="@color/pressed_color">
+
+                   <EditText
+                       android:id="@+id/buy_zip_code"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Zip code :"
+                       android:imeActionId="6"
+                       android:fontFamily="@font/maven_pro"
+                       android:imeActionLabel="@string/action_sign_in_short"
+                       android:imeOptions="actionUnspecified"
+                       android:inputType="textAutoComplete"
+                       android:maxLines="1"
+                       android:singleLine="true" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginRight="30dp">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:passwordToggleEnabled="true"
+                   app:passwordToggleTint="@color/pressed_color">
+
+                   <EditText
+                       android:id="@+id/buy_email"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="E-mail"
+                       android:imeActionId="6"
+                       android:fontFamily="@font/maven_pro"
+                       android:imeActionLabel="@string/action_sign_in_short"
+                       android:imeOptions="actionUnspecified"
+                       android:inputType="textAutoComplete"
+                       android:maxLines="1"
+                       android:singleLine="true" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/relativeLayout3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:layout_marginRight="30dp"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:orientation="vertical"
+                   android:layout_weight="2"
+                   android:gravity="center"
+                   android:layout_height="27dp">
+
+                   <TextView
+                       android:layout_gravity="end"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="16sp"
+                       style="@style/mave_bold"
+                       android:textColor="@color/colorPrimaryText"
+                       android:text="Proximo Passo"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:orientation="vertical"
+                   android:layout_weight="1"
+
+                   android:layout_height="30dp">
+
+                   <ImageView
+                       android:layout_marginTop="4dp"
+                       android:layout_marginStart="5dp"
+                       android:id="@+id/buy_next_step"            android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/circlecolor"
+                       android:src="@drawable/ic_arrow_forward"/>
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+           <View
+               android:layout_width="26dp"
+               android:layout_height="36dp"/>
+
+       </LinearLayout>
+
+   </ScrollView>
+</LinearLayout>

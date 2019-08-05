@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".home.HomeActivity"
+    android:id="@+id/drawerHome">
+
+    <include
+        layout="@layout/app_bar_home"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_viewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_stock"
+        app:menu="@menu/activity_stock_drawer"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center"
+            android:clickable="true"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf"
+            android:background="@color/pressed_color"
+            android:focusable="true">
+
+            <ImageView
+                android:elevation="@dimen/fab_margin"
+                android:id="@+id/slider"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:tint="@color/branco"
+                android:background="@drawable/bg_circle_solid"
+                android:padding="3dp"
+                android:src="@drawable/ic_lightbulb"
+                android:layout_marginStart="20dp"
+                tools:targetApi="lollipop" />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

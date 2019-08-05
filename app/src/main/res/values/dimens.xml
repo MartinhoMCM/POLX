@@ -1,0 +1,46 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="size20dp">20dp</dimen>
+    <dimen name="size30dp">30dp</dimen>
+    <dimen name="size34dp">34dp</dimen>
+    <dimen name="size40dp">40dp</dimen>
+    <dimen name="size50dp">50dp</dimen>
+    <dimen name="size10dp">10dp</dimen>
+    <dimen name="size5dp">5dp</dimen>
+    <dimen name="size4dp">4dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="size16dp">16dp</dimen>
+    <dimen name="size32dp">32dp</dimen>
+    <dimen name="spinner_height">40dp</dimen>
+    <dimen name="card_margin_inside">16dp</dimen>
+    <dimen name="text18">18sp</dimen>
+    <dimen name="text12">12sp</dimen>
+    <dimen name="text16">16sp</dimen>
+    <dimen name="text24">24sp</dimen>
+    <dimen name="size8">8dp</dimen>
+    <dimen name="size24">24dp</dimen>
+    <dimen name="size50">50dp</dimen>
+    <dimen name="size24dp">24dp</dimen>
+
+    <dimen name="fab_margin_right">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="cardElevation">2dp</dimen>
+    <dimen name="cardCorner">4dp</dimen>
+
+</resources>

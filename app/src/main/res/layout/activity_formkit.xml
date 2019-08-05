@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:animateLayoutChanges="true">
+
+    <ImageButton
+        android:id="@+id/introBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="18.0dip"
+        android:padding="2.0dip"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_clear"
+        android:tint="@android:color/white"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="4.0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cloud1"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_marginTop="40.0dip"
+                android:layout_marginBottom="18.0dip"
+                android:src="@drawable/logo_large"
+                tools:ignore="ContentDescription" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:visibility="gone"
+                    android:layout_marginTop="5.0dip"
+                    android:src="@drawable/cloud_1" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/cloud_2" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="22.0dip"
+                    android:src="@drawable/cloud_3" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/welcomescreen_main_image" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18.0dip"
+                android:gravity="center_horizontal"
+                android:text="@string/encontre_an_ncios"
+                android:fontFamily="@font/maven_pro_medium"
+                android:textColor="@android:color/white"
+                android:textSize="24.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18.0dip"
+                android:fontFamily="@font/maven_pro"
+                android:text="@string/na_sua_area_geografica"
+                android:textColor="@android:color/white"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.5"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="66.0dip"
+                android:layout_margin="16.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="@drawable/btn_flat_blue_selector"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18.0sp">
+
+                <ImageView
+                    android:layout_width="22.0dip"
+                    android:layout_height="22.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="22.0dip"
+                    android:src="@drawable/icon_login_fb"
+                    android:contentDescription="@string/app_name" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="10.0dip"
+                    android:layout_marginEnd="22.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="16.0dip"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_com_facbook"
+                        android:fontFamily="@font/maven_pro_medium"
+                        android:textColor="@android:color/white"
+                        android:textSize="17.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:fontFamily="@font/maven_pro"
+                        android:text="@string/termos_e_condi_es"
+                        android:textColor="@color/pressed_color"
+                        android:textSize="11.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_form_tab"
+                android:layout_width="match_parent"
+                android:layout_height="25.8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/maven_pro"
+                    android:gravity="center"
+                    android:text="Entrar com nome de usuario"
+                    android:textColor="@color/white"
+                    android:textSize="15.0sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.4">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/alternativa_slide1"/>
+    <corners android:bottomRightRadius="@dimen/size24dp" android:bottomLeftRadius="@dimen/size24dp"/>
+
+</shape>

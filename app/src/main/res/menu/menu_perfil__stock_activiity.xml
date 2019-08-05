@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.appauth.perfil_stock.Perfil_StockActiviity">
+    <item
+        android:id="@+id/partilhar_stock"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_share"
+        android:title="@string/partilha_stock"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/editar_stock"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/edita_stock"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/LinearViewSnack"
+    tools:context=".home.MyAnuncioActivity">
+
+    <LinearLayout
+        android:id="@+id/framelayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/edit_toolbarPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/NoteWarning"
+                    android:layout_marginStart="@dimen/size32dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/adicione_no_m_ximo_8_fotos"
+                    />
+
+                <ImageButton
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/buttonGallery"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_centerVertical="false"
+                    android:layout_centerHorizontal="true"
+                    android:text="Adicionar foto"
+                    android:src="@drawable/add"
+                    android:layout_below="@+id/NoteWarning"/>
+
+                <GridView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/gvGallery"
+                    android:layout_marginTop="8dp"
+                    android:numColumns="3"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerVertical="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/NoteWarning"
+                    android:visibility="invisible"
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="@string/t_tulo_do_an_ncio"
+                    android:id="@+id/edit_titlePost"
+                    style="@style/publicarTextStyle"
+                    android:layout_marginTop="16dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_below="@+id/gvGallery"/>
+                <Spinner
+                    android:hint="Categoria"
+                    android:id="@+id/edit_categoryPost"
+                    style="@style/publicarTextStyle"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_below="@+id/edit_titlePost"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="@string/descri_o"
+                    android:id="@+id/edit_descriptionPost"
+                    style="@style/publicarTextStyle"
+                    android:layout_below="@+id/edit_categoryPost"
+                    android:singleLine="false"
+                    android:maxLines="10"
+                    />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="@string/localiza_o"
+                    android:id="@+id/edit_localizationPost"
+                    style="@style/publicarTextStyle"
+                    android:maxLines="2"
+                    android:layout_below="@+id/edit_descriptionPost"
+                    android:singleLine="true"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pre_o"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:layout_below="@+id/edit_localizationPost"
+                    android:id="@+id/edit_pricePost"
+                    style="@style/publicarTextStyle"
+                    android:maxLines="1" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="@string/email"
+                    android:singleLine="true"
+                    android:id="@+id/edit_emailPost"
+                    style="@style/publicarTextStyle"
+                    android:maxLines="1"
+                    android:layout_below="@+id/edit_pricePost"/>
+
+
+                <Button
+                    android:id="@+id/edit_IdPublish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:textColor="@android:color/white"
+                    android:text="Salvar Anúncio"
+                    android:layout_below="@+id/edit_emailPost"
+                    android:background="@drawable/shapebutton1"
+                    />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/edit_spin_kit"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    app:SpinKit_Color="@color/colorAccent" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

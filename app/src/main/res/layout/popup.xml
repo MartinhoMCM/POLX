@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/framelayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:title="Validação"
+                app:navigationIcon="?attr/homeAsUpIndicator">
+            </androidx.appcompat.widget.Toolbar>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress_superior"
+                android:layout_marginTop="26dp"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        </FrameLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/NoteWarning"
+                    android:layout_marginStart="@dimen/size32dp"
+                    android:layout_marginEnd="@dimen/size32dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    style="@style/mave_normal"
+                    android:text="Insire o código fornecido pelo Bolderon"
+                    />
+
+
+                <com.vicmikhailau.maskededittext.MaskedEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tickedPass"
+                    android:layout_marginTop="8dp"
+                    app:mask="***-***-***"
+                    android:text="XXX-YYY-ZZZ"
+                    android:textAlignment="center"
+                    android:background="@color/browser_actions_divider_color"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerVertical="false"
+                    android:inputType="number"
+                    android:layout_centerHorizontal="true"
+                    style="@style/mave_normal"
+                    android:layout_below="@+id/NoteWarning"
+                    android:layout_marginStart="@dimen/size32dp"
+                    android:layout_marginEnd="@dimen/size32dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Note"
+                    android:layout_below="@id/gvGallery"
+                    android:layout_marginStart="@dimen/size32dp"
+                    android:layout_marginEnd="@dimen/size32dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    style="@style/mave_normal"
+                    android:text="Apos o preechimento actual, sua confirmacao estara em pendente aguardando o terminio da verficacao na aplicacao"
+                    />
+
+
+                <Button
+                    android:layout_below="@id/Note"
+                    android:id="@+id/IdPublish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/size32dp"
+                    android:layout_marginEnd="@dimen/size32dp"
+                    android:layout_marginBottom="32dp"
+                    android:textColor="@android:color/white"
+                    style="@style/mave_normal"
+                    android:text="Validar o comprovativo"
+                    android:background="@drawable/shapebutton2"
+                    />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/spin_kit"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    app:SpinKit_Color="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

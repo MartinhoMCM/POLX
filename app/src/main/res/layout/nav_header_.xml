@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/alternativa_slide1"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/Theme.MaterialComponents"
+    >
+
+    <ImageView
+        android:id="@+id/imageNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/text_usr_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Angopapo User"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/text_usr_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="angopapo.co.ao"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+
+
+</LinearLayout>
